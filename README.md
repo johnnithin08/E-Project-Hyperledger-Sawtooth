@@ -47,6 +47,8 @@ The contractor can perform two actions in this application. He can place the bid
 	
 	sawtooth keygen onsi*** for onsite engineer.  eg.  sawtooth keygen onsiritwhik
 	
+	All keys should follow the above naming convention.
+	
 NOTE: THE USERS MUST BE SURE TO REMEMBER THE USERNAME AND STORE THE PUBLIC KEY AND PRIVATE KEY. PROJECT MANAGER SHOULD KNOW THE PUBLIC KEY OF THE ONSITE ENGINEER HE IS ASSIGNING.
 
 
