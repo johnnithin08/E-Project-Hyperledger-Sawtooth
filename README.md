@@ -1,4 +1,4 @@
-#E-PROJECT
+#e-Project
 
 ##Abstract
 e-Project is a project management portal for managing government projects that are assigned to a local governing body over a private blockchain network. This application could help with the tracking of a project throughout it’s journey till completion. It allows 3 types of users to participate where all of them are allowed to add relevant particular data about the project that they are working on. This application allows the governing body to keep track of the project reports and the progress in completion of the project. It also allows the cross verification of data entered by the users to ensure the authenticity of the data provided.
@@ -46,7 +46,7 @@ On chain permissioning
 1) The public keys that to be permitted should be added to “sawtooth.identity.allowed_keys” settings
 
 2)Policies describe a set of identities that have permission to perform some action.
-# sawtooth identity policy create -k ~/.sawtooth/keys/my_key.priv --url http://rest-api:8008 policy_1 "PERMIT_KEY *" creates a policy.
+ `sawtooth identity policy create -k ~/.sawtooth/keys/my_key.priv --url http://rest-api:8008 policy_1 "PERMIT_KEY *" creates a policy.`
 
 3)The roles must be assigned to the policy  using – transactor.SUB_ROLE = POLICY_NAME
     where transactor should be the prefix used to specify roles that deal with the transactor
