@@ -1,0 +1,52 @@
+<div id="headings">
+        <nav id="myNavbar" class="navbar navbar-expand-md navbar-dark" style="background-color:black">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="nav-link" id="home" href="/phome">Home   </a>
+                </li>
+                <li>
+                    <a class="nav-link" id="padd_new" href="/phome/add_new">Add Project   </a>
+                </li>
+                <li>
+                    <a class="nav-link" id="p_approved" href="/phome/approvedprojects">Approved Projects   </a>
+                </li>
+                 <li>
+                    <a class="nav-link" id="p_pending" href="/phome/pendingprojects">Pending Approvals   </a>
+                </li>
+                <li>
+                    <a class="nav-link" id="p_tender" href="/phome/project_tender">Projects For Tender   </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <p id="userCredentials"  class="nav-link" style="color: green;text-align:center; font-family:'Open Sans', sans-serif;font-weight: normal; font-size: 20px;"> </p>
+              <li class="nav-item"><a class="nav-link" href="/" onclick="logout()">Logout</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    
+    
+  <div class="div1">
+    
+<form>
+     <div>
+         PROJECT TYPE
+          <select id="ProjType">
+            <option value="productive">PRODUCTIVE SECTOR</option>
+            <option value="service">SERVICE SESCTOR</option>
+            <option value="infra">INFRASTRUCTURE SECTOR</option>
+          </select>
+        </div>
+    PROJECT NAME<input type="text" id='proj_name'>
+    PROJECT ID <input type="text" id='proj_id'>
+    Onsite Engineer Public Key<input type="text" id='e_key'>
+    Task<input type="text" id='task' placeholder="sub task">
+    Estimate Budget<input type="number" id='amount' placeholder="amount alloted">
+    
+    <button type="submit" class="btn btn-lg" onclick="add_proj_tender(event)">SUBMIT</button>
+
+</form>
+</div>
+<script src='/javascripts/main.js'></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">

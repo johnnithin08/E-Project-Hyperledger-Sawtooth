@@ -1,0 +1,182 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+background-image: url("../images/sky.jpg");
+height: 100vh;
+background-size: cover;
+background-position: center;
+}
+
+.div1{
+  width: 50%;
+  align-self: center;
+  
+  }
+  
+a{
+text-decoration: none;
+color: black;
+display: block;
+}
+a:hover{
+background-color:navy;
+border-radius: 5px;
+}
+
+.form{
+position: absolute;
+z-index: 1;
+background:lightblue;
+max-width: 360px;
+margin-top: 125px;
+margin-bottom: 400px;
+margin-left: 750px; 
+padding: 45px;
+text-align: center;
+border-radius: 10px;
+}
+.form input{
+font-family: "Roboto",sans-serif;
+outline: 1;
+background: #f2f2f2;
+width: 100%;
+border: 0;
+margin: 0 0 15px;
+padding: 15px;
+box-sizing: border-box;
+font-size: 14px;
+}
+.form button{
+font-family: "Roboto",sans-serif;
+text-transform: uppercase;
+outline: 0;
+background: rgb(5, 126, 9);
+width: 100%;
+border: 0;
+padding: 15px;
+color: #FFFFFF;
+font-size: 14px;
+cursor: pointer;
+}
+.form .login-form .button{
+font-family: "Roboto",sans-serif;
+text-transform: uppercase;
+outline: 0;
+background: rgb(13, 216, 20);
+width: 100%;
+border: 0;
+padding: 15px;
+color: #FFFFFF;
+font-size: 14px;
+cursor: pointer;
+
+
+}
+.form .REgister{
+
+display: none;
+
+}
+
+.main-box {
+    margin: auto;
+    width: 95%;
+    border: 3px green solid;
+    padding: 2px;
+    display: flex;
+}
+
+.box {
+    margin-left: 5%;
+    float: left;
+}
+
+#orders {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#orders td, #orders th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#orders tr:nth-child(even){background-color: #f2f2f2;}
+
+#orders tr:hover {background-color: #ddd;}
+
+#orders th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: #FFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+.button {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: #FFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }

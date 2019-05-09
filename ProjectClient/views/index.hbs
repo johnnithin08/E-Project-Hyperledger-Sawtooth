@@ -1,0 +1,38 @@
+<html>
+<center>
+  <h1> E-Project </h1>
+  
+  <div id="headings">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color:black">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="nav-link" id="home" href="/">Home   </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <p id="userCredentials"  class="nav-link" style="color: green;text-align:center; font-family:'Open Sans', sans-serif;font-weight: normal; font-size: 20px;"> </p>
+              <li class="nav-item"><a class="nav-link" href="/" onclick="logout()">Logout</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    
+  
+  <div>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  <div class="form">
+  <form class="bake" >
+    <input id="username" type="text" placeholder="username"/>
+    <input id="login_id" type="text" placeholder="Private_Key"/>
+    <input type="number" name="employeeid" id="id" placeholder="id">
+    <button type="submit" style="color:black; align:center;" class="btn btn-lg" onclick= "login()" > Login</button>
+  
+  </form>
+  </div>
+</div>
+  
+<script src='/javascripts/main.js'></script>
+</center>
+</html>
+

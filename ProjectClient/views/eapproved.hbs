@@ -1,0 +1,53 @@
+<div id="headings">
+        <nav id="myNavbar"  class="navbar navbar-expand-md navbar-dark" style="background-color:black">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="nav-link" id="home" href="/ehome">Home   </a>
+                </li>
+                <li>
+                    <a class="nav-link" id="e_view" href="/ehome/eview">View Projects   </a>
+                </li>
+                  <li>
+                    <a class="nav-link" id="e_approved" href="/ehome/eapproved">Approved Projects   </a>
+                </li>
+                  <li>
+                    <a class="nav-link" id="e_pending" href="/ehome/epending">Pending Approvals   </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <p id="userCredentials"  class="nav-link" style="color: green;text-align:center; font-family:'Open Sans', sans-serif;font-weight: normal; font-size: 20px;"> </p>
+              <li class="nav-item"><a class="nav-link" href="/" onclick="logout()">Logout</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    
+<table id="orders">
+      <tr>
+        <th>Project Name</th>
+        <th>Project ID</th>
+        <th>Contractor ID</th>
+        <th>Contractor Public Key</th>
+        <th>Task</th>
+        <th>Amount</th>
+        <th>Project View</th>
+        <th>Project Report</th>
+        <th>Bill Approved</th>
+      </tr>
+      {{#listings}}
+      <tr class="">
+        <td>{{data.proj_name}}</td>
+        <td>{{data.proj_id}}</td>
+        <td>{{data.con_id}}</td>
+        <td>{{data.con_key}}</td>
+        <td>{{data.task}}</td>
+        <td>{{data.bidamount}}</td>
+        <td><a href={{data.picture}}>Picture </td>
+        <td><a href={{data.report}}>Project Report </td>
+        <td>{{data.papproved}}</td>
+      </tr>
+      {{/listings}}
+</table>
+<script src='/javascripts/main.js'></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">

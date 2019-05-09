@@ -1,0 +1,61 @@
+<div id="headings">
+        <nav id="myNavbar" class="navbar navbar-expand-md navbar-dark" style="background-color:black">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="nav-link" id="home" href="/chome">Home   </a>
+                </li>
+                <li>
+                    <a class="nav-link" id="c_view" href="/chome/viewprojects">View Projects   </a>
+                </li>
+                <li>
+                    <a class="nav-link" id="approved_proj" href="/chome/approvedprojects">Approved Projects  </a>
+                </li>
+                 <li>
+                    <a class="nav-link" id="pending_proj" href="/chome/pendingprojects">Pending Projects  </a>
+                </li>
+                 <li>
+                    <a class="nav-link" id="tender" href="/chome/addprojtender">Projects For Tender  </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <p id="userCredentials"  class="nav-link" style="color: green;text-align:center; font-family:'Open Sans', sans-serif;font-weight: normal; font-size: 20px;"> </p>
+              <li class="nav-item"><a class="nav-link" href="/" onclick="logout()">Logout</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    
+<table id="orders">
+      <tr>
+        <th>Project Type</th>
+        <th>Project Name</th>
+        <th>Project ID</th>
+        <th>Task</th>
+        <th>Amount</th>
+        <th>Bid Amount</th>
+        <th></th>
+        
+        
+      </tr>
+      {{#listings}}
+      <tr class="">
+        
+        <td>{{data.project_type}}</td>
+        <td>{{data.proj_name}}</td>
+        <td>{{data.proj_id}}</td>
+        <td>{{data.task}}</td>
+        <td>{{data.amount}}</td>
+        <td class='nr'><input type="text" id="{{id}}" name='bid'></td>
+        <td><button class="button" value="submit" onclick="c_tender_bid(event,'{{address}}',{{id}})" >
+              Apply Tender
+            </button></td> 
+        
+      
+      </tr>
+      
+      {{/listings}}
+</table>
+<script src='/javascripts/main.js'></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
