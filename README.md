@@ -29,7 +29,7 @@ The contractor can perform two actions in this application. He can place the bid
 **How to Setup :**
 
 
-1)Dowload the file from 
+1)Dowload the file from [here](https://gitlab.com/johnnithin08/e---project)
 
 2)Unzip the file
 
